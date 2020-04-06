@@ -1,5 +1,7 @@
 {
   "name": "horoscope",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,17 +1,104 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Signs
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item class="cent" color="#393E46" lines="none">
+    <h2 class="cal" color="white">Calculate Your Sun Sign</h2>
+  </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+
+  <ion-item>
+    <ion-label>Day *</ion-label>
+    <ion-select value="31" [(ngModel)]="date">
+      <ion-select-option value="01">01</ion-select-option>
+      <ion-select-option value="02">02</ion-select-option>
+      <ion-select-option value="03">03</ion-select-option>
+      <ion-select-option value="04">04</ion-select-option>
+      <ion-select-option value="05">05</ion-select-option>
+      <ion-select-option value="06">06</ion-select-option>
+      <ion-select-option value="07">07</ion-select-option>
+      <ion-select-option value="08">08</ion-select-option>
+      <ion-select-option value="09">09</ion-select-option>
+      <ion-select-option value="10">10</ion-select-option>
+      <ion-select-option value="11">11</ion-select-option>
+      <ion-select-option value="12">12</ion-select-option>
+      <ion-select-option value="13">13</ion-select-option>
+      <ion-select-option value="14">14</ion-select-option>
+      <ion-select-option value="15">15</ion-select-option>
+      <ion-select-option value="16">16</ion-select-option>
+      <ion-select-option value="17">17</ion-select-option>
+      <ion-select-option value="18">18</ion-select-option>
+      <ion-select-option value="19">19</ion-select-option>
+      <ion-select-option value="20">20</ion-select-option>
+      <ion-select-option value="21">21</ion-select-option>
+      <ion-select-option value="22">22</ion-select-option>
+      <ion-select-option value="23">23</ion-select-option>
+      <ion-select-option value="24">24</ion-select-option>
+      <ion-select-option value="25">25</ion-select-option>
+      <ion-select-option value="26">26</ion-select-option>
+      <ion-select-option value="27">27</ion-select-option>
+      <ion-select-option value="28">28</ion-select-option>
+      <ion-select-option value="29">29</ion-select-option>
+      <ion-select-option value="30">30</ion-select-option>
+      <ion-select-option value="31">31</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Month *</ion-label>
+    <ion-select value="12" [(ngModel)]="months">
+      <ion-select-option value="01">January</ion-select-option>
+      <ion-select-option value="02">February</ion-select-option>
+      <ion-select-option value="03">March</ion-select-option>
+      <ion-select-option value="04">April</ion-select-option>
+      <ion-select-option value="05">May</ion-select-option>
+      <ion-select-option value="06">June</ion-select-option>
+      <ion-select-option value="07">July</ion-select-option>
+      <ion-select-option value="08">August</ion-select-option>
+      <ion-select-option value="09">September</ion-select-option>
+      <ion-select-option value="10">October</ion-select-option>
+      <ion-select-option value="11">November</ion-select-option>
+      <ion-select-option value="12">December</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>Year</ion-label>
+    <ion-select value="1996">
+      <ion-select-option value="1989">1989</ion-select-option>
+      <ion-select-option value="1990">1990</ion-select-option>
+      <ion-select-option value="1991">1991</ion-select-option>
+      <ion-select-option value="1992">1992</ion-select-option>
+      <ion-select-option value="1993">1993</ion-select-option>
+      <ion-select-option value="1994">1994</ion-select-option>
+      <ion-select-option value="1995">1995</ion-select-option>
+      <ion-select-option value="1996">1996</ion-select-option>
+      <ion-select-option value="1997">1997</ion-select-option>
+      <ion-select-option value="1998">1998</ion-select-option>
+      <ion-select-option value="1999">1999</ion-select-option>
+      <ion-select-option value="2000">2000</ion-select-option>
+      <ion-select-option value="2001">2001</ion-select-option>
+      <ion-select-option value="2002">2002</ion-select-option>
+      <ion-select-option value="2003">2003</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item color="#393E46" class="cent" lines="none">
+    <ion-button (click)="select_dropdown_value()">Calculate</ion-button>
+  </ion-item>
+
+
+
+
+
+
+
+
+
 </ion-content>

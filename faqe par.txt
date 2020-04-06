@@ -1,0 +1,145 @@
+
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432106.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>AQUARIUS</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432108.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>PISCES</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432115.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>ARIES</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432110.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>TAURUS</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432111.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>GEMINI</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432105.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>CANCER</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432113.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>LEO</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432107.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>VIRGO</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432112.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>LIBRA</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432116.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>SCORPIO</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432109.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>SAGITTARIUS</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://image.flaticon.com/icons/svg/432/432114.svg">
+      </ion-thumbnail>
+      <ion-label >
+        <h2>CAPRICORN</h2>
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  

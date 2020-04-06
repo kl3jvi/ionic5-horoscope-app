@@ -2,9 +2,40 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+
+
+img{
+  border-radius: 50%;
+}
+
+ion-toolbar{
+  --background:#222831;
+  color: white;
+}
+ion-icon{
+  color: #EEEEEE;
+}
+
+ion-tab-bar{
+  --background:#222831;
+  color: white;
+}
+
+ion-content{
+  --background:#393E46;
+}
+
+@font-face {
+  font-family: 'Sen';
+  src: url('../assets/fonts/Sen-Regular1.ttf');
+}
+
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
+
+  --ion-font-family: 'Sen';
+
+  --ion-color-primary: #00ADB5;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -52,7 +83,7 @@
   --ion-color-danger-tint: #ed576b;
 
   /** dark **/
-  --ion-color-dark: #222428;
+  --ion-color-dark: #222831;
   --ion-color-dark-rgb: 34, 36, 40;
   --ion-color-dark-contrast: #ffffff;
   --ion-color-dark-contrast-rgb: 255, 255, 255;

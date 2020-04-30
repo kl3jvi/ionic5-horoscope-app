@@ -1,42 +1,42 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
+    <ion-title mode="ios">
       Settings
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card>
+  <ion-card mode="ios">
     <ion-item lines="none">
       <ion-icon slot="start" name="notifications" color="black"></ion-icon>
       <ion-label>Recieve Notifications</ion-label>
-      <ion-toggle color="success"></ion-toggle>
+      <ion-toggle mode="md" color="success"></ion-toggle>
     </ion-item>
   </ion-card>
 
-  <ion-card>
+  <ion-card mode="ios">
     <ion-item (click)="openPlayStore()" lines="none">
       <ion-icon color="black" slot="start" name="bug"></ion-icon>
       <ion-label>Report a Bug</ion-label>
     </ion-item>
   </ion-card>
 
-  <ion-card>
+  <ion-card mode="ios">
     <ion-item (click)="openPlayStore()">
       <ion-icon color="black" mode="ios" slot="start" name="star-half"></ion-icon>
       <ion-label>Rate Heroscope in Play Store</ion-label>
     </ion-item>
   </ion-card>
   
-  <ion-card>
+  <ion-card mode="ios">
     <ion-item href="https://paypal.me/kl3jvi" lines="none">
       <ion-icon color="black" slot="start" name="cafe"></ion-icon>
       <ion-label>Buy Us A Coffee</ion-label>
     </ion-item>
   </ion-card>
 
-  <ion-card>
+  <ion-card mode="ios">
     <ion-item color="#393E46" lines="none">
       <ion-label class="version">Version 0.0.1</ion-label>
     </ion-item>

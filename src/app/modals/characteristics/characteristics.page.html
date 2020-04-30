@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons (click)="closeModal()" slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{title}} Characteristics</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="card">
+    <img [src]="foto"/>
+    <ion-label class="desc">
+      <p class="k">{{description}}</p>
+    </ion-label>
+  </ion-card>
+</ion-content>

@@ -56,6 +56,7 @@ export class Tab1Page {
 
   getAquarius(){
     return this.httpClient.post('https://aztro.sameerkumar.website/?sign=aquarius&day=today',this.aq_description)
+    
   }
 
   getPisces(){
@@ -111,83 +112,69 @@ export class Tab1Page {
     });
 
     this.getPisces().subscribe((data)=>{
-      console.log(data);
       this.pisc_description = data['description'];
       this.pisc_range = data['date_range']
       this.pisc_comp =data['compatibility']
     });
 
     this.getAries().subscribe((data)=>{
-      console.log(data);
       this.aries_description = data['description'];
       this.aries_range = data['date_range']
       this.aries_comp =data['compatibility']
     });
 
     this.getTaurus().subscribe((data)=>{
-      console.log(data);
       this.taurus_description = data['description'];
       this.taurus_range = data['date_range']
       this.taurus_comp =data['compatibility']
     });
 
     this.getGemini().subscribe((data)=>{
-      console.log(data);
       this.gemini_description = data['description'];
       this.gemini_range = data['date_range']
       this.gemini_comp =data['compatibility']
     });
 
     this.getCancer().subscribe((data)=>{
-      console.log(data);
       this.canc_description = data['description'];
       this.canc_range = data['date_range']
       this.canc_comp =data['compatibility']
     });
 
     this.getLeo().subscribe((data)=>{
-      console.log(data);
       this.leo_description = data['description'];
       this.leo_range = data['date_range']
       this.leo_comp =data['compatibility']
     });
 
     this.getVirgo().subscribe((data)=>{
-      console.log(data);
       this.virgo_description = data['description'];
       this.virgo_range = data['date_range']
       this.virgo_comp =data['compatibility']
     });
 
     this.getLibra().subscribe((data)=>{
-      console.log(data);
       this.libra_description = data['description'];
       this.libra_range = data['date_range']
       this.libra_comp =data['compatibility']
     });
 
     this.getScorpio().subscribe((data)=>{
-      console.log(data);
       this.scorpio_description = data['description'];
       this.scorpio_range = data['date_range']
       this.scorpio_comp =data['compatibility']
     });
 
     this.getSagittarius().subscribe((data)=>{
-      console.log(data);
       this.sag_description = data['description'];
       this.sag_range = data['date_range']
       this.sag_comp =data['compatibility']
     });
 
     this.getCapricorn().subscribe((data)=>{
-      console.log(data);
       this.cap_description = data['description'];
       this.cap_range = data['date_range']
       this.cap_comp = data['compatibility']
     });
-
   }
-
-  
 }

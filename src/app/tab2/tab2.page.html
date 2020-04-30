@@ -8,8 +8,8 @@
 
 <ion-content [fullscreen]="true">
 
-  <ion-card>
-    <h3 class="cal1">Calculate Your Sun Sign</h3>
+  <ion-card class="card">
+    <h3 class="cal1">Look Up Your Sun Sign</h3>
     <ion-item>
       <ion-label>Day *</ion-label>
       <ion-select placeholder="Select One" value="31" [(ngModel)]="date">
@@ -64,14 +64,87 @@
         <ion-select-option value="12">December</ion-select-option>
       </ion-select>
     </ion-item>
-  </ion-card>
-
+  
+<div class="but">
   <ion-item color="#393E46" class="cent" lines="none">
-    <ion-button (click)="select_dropdown_value()">Calculate</ion-button>
+    <ion-button expand="block" (click)="select_dropdown_value()">Submit</ion-button>
   </ion-item>
-
-
+</div>
+  
   <ion-item class="cent" color="#393E46" lines="none">
-    <h3 class="cal">{{showMessage}}</h3>
+      <h3 class="cal1">Your Sun Sign is: {{showMessage}}</h3>
   </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item>
+    <h3 class="bold">Signs Characteristics</h3>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img (click)="openModal(1)" src="https://image.flaticon.com/icons/svg/450/450947.svg">
+        <ion-label class="cent"><p>Aquarius</p></ion-label>
+      </ion-col>
+      <ion-col>
+        <img (click)="openModal(2)" src="https://image.flaticon.com/icons/svg/450/450938.svg">
+        <ion-label class="cent"><p>Pisces</p></ion-label>
+      </ion-col>
+      <ion-col>
+        <img (click)="openModal(3)" src="https://image.flaticon.com/icons/svg/450/450942.svg">
+        <ion-label class="cent"><p>Aries</p></ion-label>
+      </ion-col>
+      <ion-col>
+        <img (click)="openModal(4)" src="https://image.flaticon.com/icons/svg/450/450944.svg">
+        <ion-label class="cent"><p>Taurus</p></ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+  <!--second grid  --> 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img (click)="openModal(5)" src="https://image.flaticon.com/icons/svg/450/450948.svg">
+        <ion-label class="cent"><p>Gemini</p></ion-label>
+      </ion-col>
+      <ion-col>
+        <img (click)="openModal(6)" src="https://image.flaticon.com/icons/svg/450/450940.svg">
+        <ion-label class="cent"><p>Cancer</p></ion-label>
+      </ion-col>
+      <ion-col>
+        <img (click)="openModal(7)" src="https://image.flaticon.com/icons/svg/450/450946.svg">
+        <ion-label class="cent"><p>Leo</p></ion-label>
+      </ion-col>
+      <ion-col>
+        <img (click)="openModal(8)" src="https://image.flaticon.com/icons/svg/450/450939.svg">
+        <ion-label class="cent"><p>Virgo</p></ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--third grid-->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img (click)="openModal(9)" src="https://image.flaticon.com/icons/svg/450/450941.svg">
+        <ion-label class="cent"><p>Libra</p></ion-label>
+      </ion-col>
+      <ion-col>
+        <img (click)="openModal(10)" src="https://image.flaticon.com/icons/svg/450/450937.svg">
+        <ion-label class="cent"><p>Scorpio</p></ion-label>
+      </ion-col>
+      <ion-col>
+        <img (click)="openModal(11)" src="https://image.flaticon.com/icons/svg/450/450936.svg">
+        <ion-label class="cent"><p>Saggitarius</p></ion-label>
+      </ion-col>
+      <ion-col>
+        <img (click)="openModal(12)" src="https://image.flaticon.com/icons/svg/450/450943.svg">
+        <ion-label class="cent"><p>Capricorn</p></ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+
+
+
 </ion-content>

@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
+<div *ngIf="skeletonData">
   <ion-item lines="none" color="#393E46">
     <h4 class="ngj">
       Horoscope : {{current_date}}
@@ -195,4 +195,128 @@
       <ion-label color="primary">Today Compatibility: {{cap_comp}}</ion-label>
     </ion-item>
   </ion-card>
+</div>
+
+
+
+
+<!-- Skeleton text-->
+
+  <div  *ngIf="!skeletonData">
+    <div class="padding custom-skeleton">
+      <ion-card mode="md">
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-skeleton-text animated></ion-skeleton-text>
+          </ion-avatar>
+          <ion-label>
+            <h2>
+              <ion-skeleton-text animated style="width: 70%"></ion-skeleton-text>
+            </h2>
+            <p>
+              <ion-skeleton-text animated style="width: 96%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 90%"></ion-skeleton-text>
+              <ion-skeleton-text animated></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 89%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 100%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 82%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 89%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 92%"></ion-skeleton-text>
+            </p>
+          </ion-label>
+        </ion-item>
+         
+      </ion-card>
+    </div>
+
+    <div class="padding custom-skeleton">
+      <ion-card mode="md">
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-skeleton-text animated></ion-skeleton-text>
+          </ion-avatar>
+          <ion-label>
+            <h2>
+              <ion-skeleton-text animated style="width: 70%"></ion-skeleton-text>
+            </h2>
+            <p>
+              <ion-skeleton-text animated style="width: 96%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 90%"></ion-skeleton-text>
+              <ion-skeleton-text animated></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 89%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 100%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 82%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 89%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 92%"></ion-skeleton-text>
+            </p>
+          </ion-label>
+        </ion-item>
+         
+      </ion-card>
+    </div>
+
+    <div class="padding custom-skeleton">
+      <ion-card mode="md">
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-skeleton-text animated></ion-skeleton-text>
+          </ion-avatar>
+          <ion-label>
+            <h2>
+              <ion-skeleton-text animated style="width: 70%"></ion-skeleton-text>
+            </h2>
+            <p>
+              <ion-skeleton-text animated style="width: 96%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 90%"></ion-skeleton-text>
+              <ion-skeleton-text animated></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 89%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 100%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 82%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 89%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 92%"></ion-skeleton-text>
+            </p>
+          </ion-label>
+        </ion-item>
+         
+      </ion-card>
+    </div>
+
+    <div class="padding custom-skeleton">
+      <ion-card mode="md">
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-skeleton-text animated></ion-skeleton-text>
+          </ion-avatar>
+          <ion-label>
+            <h2>
+              <ion-skeleton-text animated style="width: 70%"></ion-skeleton-text>
+            </h2>
+            <p>
+              <ion-skeleton-text animated style="width: 96%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 90%"></ion-skeleton-text>
+              <ion-skeleton-text animated></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 89%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 100%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 82%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 89%"></ion-skeleton-text>
+              <ion-skeleton-text animated style="width: 92%"></ion-skeleton-text>
+            </p>
+          </ion-label>
+        </ion-item>
+         
+      </ion-card>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
 </ion-content>

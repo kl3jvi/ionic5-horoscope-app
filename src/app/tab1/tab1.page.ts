@@ -50,13 +50,15 @@ export class Tab1Page {
   scorpio_comp
   sag_comp
   cap_comp
+
+  //skeleton var
+  skeletonData
   
   constructor(private httpClient: HttpClient) {}
 
 
   getAquarius(){
-    return this.httpClient.post('https://aztro.sameerkumar.website/?sign=aquarius&day=today',this.aq_description)
-    
+  return this.httpClient.post('https://aztro.sameerkumar.website/?sign=aquarius&day=today',this.aq_description)
   }
 
   getPisces(){
@@ -105,6 +107,7 @@ export class Tab1Page {
   ionViewDidEnter(){
     this.getAquarius().subscribe((data)=>{
       console.log(data);
+      this.skeletonData = true;
       this.aq_description = data['description'];
       this.current_date = data['current_date']
       this.aq_range = data['date_range']

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LoadingController, ToastController } from '@ionic/angular';
 import { CharacteristicsPage } from '../modals/characteristics/characteristics.page';
 import { ModalController } from '@ionic/angular';
+import {AdmobFreeService} from '../admob.service'
 
 @Component({
   selector: 'app-tab2',
@@ -16,8 +17,9 @@ export class Tab2Page {
   title: any;
   description: any;
   foto: any;
+  number=0;
   
-  constructor(private modalController: ModalController, private loadingCtrl: LoadingController, public toastCtrl: ToastController) { }
+  constructor(private admobFreeService: AdmobFreeService,private modalController: ModalController, private loadingCtrl: LoadingController, public toastCtrl: ToastController) { }
 
 
 
@@ -92,28 +94,40 @@ export class Tab2Page {
     setTimeout(() => {
       if (this.months == 12 && this.date > 21 && this.date < 32 || this.months == 1 && this.date < 20) {
         this.showMessage = "Capricorn";
+        this.admobFreeService.Interstitial();
       } else if (this.months == 1 && this.date >= 20 || this.months == 2 && this.date <= 18) {
         this.showMessage = "Aquarius";
+        this.admobFreeService.Interstitial();
       } else if (this.months == 2 && this.date > 18 && this.date < 30 || this.months == 3 && this.date <= 20) {
         this.showMessage = "Pisces";
+        this.admobFreeService.Interstitial();
       } else if (this.months == 3 && this.date > 20 && this.date <= 31 || this.months == 4 && this.date <= 20) {
         this.showMessage = "Aries";
+        this.admobFreeService.Interstitial();
       } else if (this.months == 4 && this.date > 20 && this.date <= 30 || this.months == 5 && this.date <= 20) {
         this.showMessage = "Taurus";
+        this.admobFreeService.Interstitial();
       } else if (this.months == 5 && this.date > 20 && this.date <= 31 || this.months == 6 && this.date <= 21) {
         this.showMessage = "Gemini";
+        this.admobFreeService.Interstitial();
       } else if (this.months == 6 && this.date > 21 && this.date <= 30 || this.months == 7 && this.date <= 22) {
         this.showMessage = "Cancer";
+        this.admobFreeService.Interstitial();
       } else if (this.months == 7 && this.date > 22 && this.date <= 31 || this.months == 8 && this.date <= 22) {
         this.showMessage = "Leo";
+        this.admobFreeService.Interstitial();
       } else if (this.months == 8 && this.date > 22 && this.date <= 31 || this.months == 9 && this.date <= 22) {
         this.showMessage = "Virgo";
+        this.admobFreeService.Interstitial();
       } else if (this.months == 9 && this.date > 22 && this.date <= 30 || this.months == 10 && this.date <= 22) {
         this.showMessage = "Libra";
+        this.admobFreeService.Interstitial();
       } else if (this.months == 10 && this.date > 22 && this.date <= 31 || this.months == 11 && this.date <= 22) {
         this.showMessage = "Scorpio";
+        this.admobFreeService.Interstitial();
       } else if (this.months == 11 && this.date > 22 && this.date <= 30 || this.months == 12 && this.date <= 22) {
         this.showMessage = "Sagittarius";
+        this.admobFreeService.Interstitial();
       } else {
         this.presentToast()
       }
@@ -123,6 +137,7 @@ export class Tab2Page {
   async presentLoading() {
     this.loading = await this.loadingCtrl.create({ message: 'Calculating...', duration: 1000 });
     return this.loading.present();
+    
   }
 
   async presentToast() {

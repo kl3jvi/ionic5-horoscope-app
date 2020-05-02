@@ -10,6 +10,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EmailComposer } from '@ionic-native/email-composer/ngx';
+import { AdMobFree } from '@ionic-native/admob-free/ngx';
+import {AdmobFreeService} from '../app/admob.service'
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -20,6 +23,8 @@ import { EmailComposer } from '@ionic-native/email-composer/ngx';
   providers: [
     StatusBar,
     SplashScreen,
+    AdMobFree,
+    AdmobFreeService,
     Market,
     EmailComposer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

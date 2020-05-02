@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalController, Platform } from '@ionic/angular';
+import {AdmobFreeService} from '../../admob.service'
+
 
 @Component({
   selector: 'app-characteristics',
@@ -8,16 +10,22 @@ import { ModalController, Platform } from '@ionic/angular';
 })
 export class CharacteristicsPage {
 
-  constructor(private modalController: ModalController, public platform: Platform) { }
+  constructor(private admobFreeService: AdmobFreeService,private modalController: ModalController, public platform: Platform) { }
   title;
   description;
   foto;
-  
+  fotoLoading;
 
   async closeModal() {
     await this.modalController.dismiss();
-    
+    this.admobFreeService.hideBanner();
   }
 
-  ngOnInit() {}
+  ionViewDidEnter(){
+    this.fotoLoading=true;
+  }
+
+  ngOnInit() {
+    this.admobFreeService.BannerAd();
+  }
 }

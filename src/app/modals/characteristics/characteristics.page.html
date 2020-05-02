@@ -8,10 +8,23 @@
 </ion-header>
 
 <ion-content>
-  <ion-card class="card">
+  <div *ngIf="fotoLoading">
+    <ion-card  class="card">
     <img [src]="foto"/>
     <ion-label class="desc">
       <p class="k">{{description}}</p>
     </ion-label>
   </ion-card>
+  </div>
+
+  <div *ngIf="!fotoLoading">
+    <ion-card  class="card1">
+      <ion-spinner name="crescent"></ion-spinner>
+      <ion-label class="desc">
+        <p class="k">{{description}}</p>
+      </ion-label>
+    </ion-card>
+  </div>
+  
+
 </ion-content>

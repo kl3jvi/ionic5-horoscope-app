@@ -22,7 +22,7 @@ export class Tab2Page implements OnInit {
   constructor(public http: HttpClient, private admobFreeService: AdmobFreeService, private modalController: ModalController, private loadingCtrl: LoadingController, public toastCtrl: ToastController) { }
 
   ngOnInit() {
-    return this.http.get("https://api.npoint.io/72ae72078be2794257bc").subscribe(data => {
+    return this.http.get("https://api.npoint.io/efba125da6ad2ab622e8").subscribe(data => {
       this.res = data["descriptions"]
     })
   }

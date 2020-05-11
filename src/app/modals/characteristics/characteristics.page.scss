@@ -7,7 +7,14 @@
     white-space: initial;
     color: black;
     font-size: 1em;
+    text-align:justify;
   }
+  .k:after {
+    content:'';
+    display:inline-block;
+    width:100%;
+    vertical-align:top;
+    }
   .desc{
       padding-top: 15px;
   }
